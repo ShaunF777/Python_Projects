@@ -19,9 +19,6 @@ Uses beloved characters from:
 Dependencies:
 - Python 3.6+ (uses f-strings)
 - No external libraries required - uses only built-in Python modules
-
-Author: Interactive Python Tutor
-Purpose: CS50 Python concepts demonstration with engaging storytelling
 """
 
 import random
@@ -31,11 +28,11 @@ import sys
 # Character data for our examples
 PETER_RABBIT_CHARACTERS = ["Peter", "Flopsy", "Mopsy", "Cotton-tail", "Benjamin"]
 FAMOUS_FIVE_CHARACTERS = ["Julian", "Dick", "Anne", "George", "Timmy"]
-FARAWAY_TREE_CHARACTERS = ["Jo", "Bessie", "Fanny", "Rick", "Silky", "Moonface"]
+FARAWAY_TREE_CHARACTERS = ["Jo", "Bessie", "Fanny", "Rick", "Silky", "Moonface", "Saucepan Man", "Dame Washalot", "The Angry Pixie"]
 
 def clear_screen():
     """Clear the screen for better presentation"""
-    print("\n" * 50)
+    print("\n" * 5)
 
 def type_effect(text, delay=0.03):
     """Print text with typing effect"""
