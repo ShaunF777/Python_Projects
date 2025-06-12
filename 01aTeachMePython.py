@@ -1,8 +1,16 @@
 #!/usr/bin/env python3
 """
 Interactive Python Learning Program
-Based on CS50's Introduction to Programming with Python - Lecture 0
-Teaches Python concepts with comparisons to C programming
+Based on CS50's Introduction to Programming with Python - Lecture 0 Functions & Variables
+Teaches Python concepts with comparisons to C programming language, including concepts like:
+Hello World programs and functions,
+Debugging and error handling, 
+Variables and user input,
+Strings and formatting,
+Integers and mathematical operations,
+Floating point numbers,
+Creating custom functions,
+Code organization with main()
 """
 
 import random
