@@ -1,40 +1,33 @@
 #!/usr/bin/env python3
 """
-silly_sayer.py
+04cSilly_Sayer.py
 
 🎤 Uses your custom 'sayings' library to greet or farewell a friend in a silly way.
 
 📌 USAGE:
-    python silly_sayer.py hello Silky
-    python silly_sayer.py goodbye Julian
+    python 04cSilly_Sayer.py hello Silky
+    python 04cSilly_Sayer.py goodbye Julian
 
 🧠 NOTE:
     - First argument: "hello" or "goodbye"
     - Second argument: the name of the person/character
 
 🎉 Examples:
-    python silly_sayer.py hello Moon-Face
-    python silly_sayer.py goodbye Peter
+    python 04cSilly_Sayer.py hello Moon-Face
+    python 04cSilly_Sayer.py goodbye Peter
 
 🗂️ Folder Structure
-
-your_project/
-│
-├── sayings.py
-├── silly_sayer.py
-
-✅ How to Run It
-
-python silly_sayer.py hello Bessie
-python silly_sayer.py goodbye Dick
-
+    your_project/
+    │
+    ├── Sayings.py
+    ├── 04cSilly_Sayer.py
 
 💡 Depends on:
-    - sayings.py (must be in the same folder)
+    - Sayings.py (must be in the same folder)
 """
 
 import sys
-from sayings import hello, goodbye
+from Sayings import hello, goodbye
 
 if len(sys.argv) != 3:
     sys.exit("❌ Usage: python silly_sayer.py [hello|goodbye] name")
