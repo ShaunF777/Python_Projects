@@ -23,9 +23,6 @@ In real practice, you would create:
 4. test_hello.py - tests for hello function
 5. test/ folder with __init__.py for organized testing
 
-If you want to create these files after the tutorial, I can help you generate them!
-
-Author: Interactive Learning Assistant
 """
 
 import time
