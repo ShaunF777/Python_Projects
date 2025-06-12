@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-silly_sentence.py
+04bSilly_sentence.py
 
 🎩✨ Welcome to the Silly Sentence Generator! ✨🎩
 
@@ -8,13 +8,17 @@ This script creates a silly sentence using words you provide on the command line
 Perfect for wordplay fans, Peter Rabbit, or the Famous Five! 🐰🧒👧
 
 📌 USAGE:
-    python silly_sentence.py noun adjective verb adverb
+    python 04bSilly_sentence.py noun adjective verb adverb
 
 📌 EXAMPLE:
-    python silly_sentence.py rabbit blue dances happily
+    python 04bSilly_sentence.py rabbit blue dances happily
+    python 04bSilly_sentence.py rabbit fluffy hops quietly
+
 
 📌 OUTPUT:
     "The blue rabbit dances happily through the Faraway Tree!"
+    "The fluffy rabbit hops quietly through the Faraway Tree like nobody's watching."
+
 
 🚨 You must provide exactly 4 arguments: a noun, an adjective, a verb, and an adverb.
 
@@ -26,7 +30,7 @@ import sys
 import random
 
 if len(sys.argv) != 5:
-    sys.exit("❌ Please provide exactly 4 words: noun adjective verb adverb\nExample: python silly_sentence.py rabbit blue jumps joyfully")
+    sys.exit("❌ Please provide exactly 4 words: noun adjective verb adverb\nExample: python 04bSilly_sentence.py rabbit blue jumps joyfully")
 
 # Assign the arguments to named variables
 _, noun, adjective, verb, adverb = sys.argv
