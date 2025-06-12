@@ -16,6 +16,19 @@ silly_sayer.py
     python silly_sayer.py hello Moon-Face
     python silly_sayer.py goodbye Peter
 
+🗂️ Folder Structure
+
+your_project/
+│
+├── sayings.py
+├── silly_sayer.py
+
+✅ How to Run It
+
+python silly_sayer.py hello Bessie
+python silly_sayer.py goodbye Dick
+
+
 💡 Depends on:
     - sayings.py (must be in the same folder)
 """
