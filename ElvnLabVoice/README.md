@@ -39,6 +39,8 @@ Go to [API Keys page](https://www.elevenlabs.io/app/api-keys) and click **"Creat
 > ✅ **Yes, you can rename it**, but it's optional.  
 > ⚠️ **No**, you should not commit the API key **or the name** to a public GitHub repo. Store it in a `.env` file or use GitHub Secrets.
 
+
+
 #### 💳 Credit Limit
 > 📌 **Default: Unlimited**  
 > ⚠️ This reflects usage within your account’s allowed quota. On a free plan, you have limited monthly credits.
