@@ -22,3 +22,7 @@ Thumbs.db
 # Hide logs or debug output
 *.log
 *.bak
+
+# Output files
+*.mp3
+output/
