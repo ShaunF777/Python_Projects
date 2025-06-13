@@ -1,0 +1,24 @@
+# .gitignore
+
+# Hide secret keys
+.env
+
+# Hide Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Hide virtual environment folder (if you're using one)
+.venv/
+env/
+venv/
+
+# Hide OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Hide logs or debug output
+*.log
+*.bak
