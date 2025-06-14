@@ -43,15 +43,22 @@ Use Cases:
 """
 
 import requests
+import os
+from dotenv import load_dotenv
+
+load_dotenv()  # 🔺 Add this before reading from os.getenv
 
 # Your ElevenLabs API key (keep this secure!)
-API_KEY = "your_api_key_here"  # <-- Replace this with your real API key from https://www.elevenlabs.io/
+API_KEY = os.getenv("ELEVENLABS_API_KEY")  # Make sure to set this in your environment variables
+# Get your own API key from https://www.elevenlabs.io/
+
+print(f"API Key loaded: {API_KEY}")  # 👈 For debugging only
 
 # The sentence to convert to speech
 text_to_speak = "Sound doctrine unites us in truth and love."
 
 # Choose a voice ID — you can get this from the ElevenLabs dashboard or voice list API
-voice_id = "TxGEqnHWrfWFTfGW9XjX"  # Example: "Rachel" (female US voice)
+voice_id = "iP95p4xoKVk53GoZ742B"  # Example: "Chris" voice ID; replace with your desired voice ID
 
 # Set up API endpoint and headers
 url = f"https://api.elevenlabs.io/v1/text-to-speech/{voice_id}"

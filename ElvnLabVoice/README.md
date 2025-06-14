@@ -37,7 +37,7 @@ Go to [API Keys page](https://www.elevenlabs.io/app/api-keys) and click **"Creat
 #### 🔐 Name
 > 🧾 **Q: It auto-generates a name like _"Menacing Anaconda"_ — can I change it?**  
 > ✅ **Yes, you can rename it**, but it's optional.  
-> ⚠️ **No**, you should not commit the API key **or the name** to a public GitHub repo. Store it in a `.env` file or use GitHub Secrets.
+> ⚠️ **No**, you should not commit the API key **or the name** to a public GitHub repo. Store it in a `.env` file or use GitHub Secrets. Scroll down for more details on API key safety.
 
 
 
@@ -99,3 +99,87 @@ response = requests.post(
 
 with open("output.mp3", "wb") as f:
     f.write(response.content)
+```
+🔐 Hiding API Keys (Best Practice for Python Projects)
+
+To protect your sensitive information, like API keys, you should:
+
+    Use a .env file to store secrets locally.
+
+    Use a .gitignore file to exclude .env from version control (e.g. GitHub).
+
+    Avoid committing sensitive data (e.g. API keys, passwords, personal info, logs).
+
+🧾 What is a .env file?
+
+A .env file stores environment variables like API keys. These are read at runtime by your program.
+
+✅ Example .env file (create it in your project root)
+```bash
+# .env
+ELEVENLABS_API_KEY=your_actual_api_key_here
+```
+
+    🔒 Never commit this file to GitHub!
+
+🧾 What is a .gitignore file?
+
+A .gitignore file tells Git which files/folders not to track or commit.
+
+✅ Example .gitignore file
+```bash
+# .gitignore
+
+# Hide secret keys
+.env
+
+# Hide Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Hide virtual environment folder (if you're using one)
+.venv/
+env/
+venv/
+
+# Hide OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Hide logs or debug output
+*.log
+*.bak
+```
+✅ Suggested .env + Folder Strategy
+
+Root Project Structure:
+```bash
+your-project/
+├── .env               ← secrets here
+├── .gitignore         ← excludes .env
+├── ElvnLabVoice/
+│   ├── eleven_api_script.py
+│   ├── output/
+│   └── README.md
+├── other_folder/
+├── requirements.txt
+└── README.md
+```
+✅ How to Use .env in Your Python Code
+
+Install python-dotenv: `pip install python-dotenv`
+
+Then update your code like this:
+```py
+from dotenv import load_dotenv
+import os
+
+# Load .env file into environment
+load_dotenv()
+
+# Access the API key
+api_key = os.getenv("ELEVENLABS_API_KEY")
+```
