@@ -15,6 +15,17 @@ your_project/
 │   └── SoundDoctrineCh10.pdf
 └── output/ (will be created automatically)
 
+The master program will:
+
+1. Process your PDF into structured text
+2. Generate an HTML preview file for you to review
+3. Create multiple audio versions (standard, multi-voice, optimized)
+4. Show progress and estimated duration
+5. Generate chapter markers
+
+You can comment out any audio generation options you don't need to save time during testing. 
+Start with just the basic create_audio() call first to make sure everything works!
+
 """
 from pdf_processor import PDFProcessor
 from audio_generator import AudioGenerator
