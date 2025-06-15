@@ -1,0 +1,12 @@
+# Core dependencies
+pip install pytesseract pdf2image pillow easyocr
+pip install beautifulsoup4 lxml requests
+pip install pydub pyttsx3
+
+# Cloud TTS services (optional)
+pip install boto3                    # AWS Polly
+pip install google-cloud-texttospeech  # Google Cloud TTS
+pip install elevenlabs              # ElevenLabs TTS
+
+# Audio processing
+pip install numpy scipy
